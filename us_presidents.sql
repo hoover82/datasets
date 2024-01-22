@@ -124,16 +124,11 @@ WITH terms AS (
 -- Snowflake version (no DUAL)
 WITH us_presidents AS (
 --US presidents with their birthdates and birthplaces
--- I've used it for parsing demonstrations
--- Data collected by Daniel Stober from information in the public domain
--- Link to the dataset on Dropbox: https://www.dropbox.com/s/t4csjgrfed0y1g8/us_presidents.sql?dl=0
-WITH us_presidents AS (
---US presidents with their birthdates and birthplaces
 
     SELECT 'GW' key,'George Washington' president, 'Popes Creek, Virginia' birthplace, DATE '1732-02-22' birthdate, DATE '1799-12-14' finaldate UNION ALL
     SELECT 'JA', 'John Adams'  				, 'Braintree, Massachusetts' 			,	DATE '1735-10-30', 	DATE '1826-07-04'	UNION ALL
     SELECT 'TJ', 'Thomas Jefferson' 		, 'Goochland County, Virginia' 			, 	DATE '1743-04-13', 	DATE '1826-07-04'	UNION ALL
-0    SELECT 'MAD','James Madison'    		, 'Port Conway, Virginia' 				, 	DATE '1751-03-16', 	DATE '1836-06-28'	UNION ALL
+    SELECT 'MAD','James Madison'    		, 'Port Conway, Virginia' 				, 	DATE '1751-03-16', 	DATE '1836-06-28'	UNION ALL
     SELECT 'MON','James Monroe'     		, 'Westmoreland County, Virginia' 		, 	DATE '1758-04-28', 	DATE '1831-07-04'	UNION ALL
     SELECT 'JQA','John Q Adams'     		, 'Braintree, Massachusetts' 			, 	DATE '1767-07-11', 	DATE '1848-02-23'	UNION ALL
     SELECT 'HICK','Andrew Jackson'  		, 'Waxhaw, North Carolina' 				, 	DATE '1767-03-15', 	DATE '1845-06-08'	UNION ALL
